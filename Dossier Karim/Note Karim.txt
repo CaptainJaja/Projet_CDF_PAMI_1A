@@ -75,3 +75,5 @@ Permettent de mesurer des signaux analogiques comme des tensions de capteurs.
 DAC_OUT :
 
 Sortie analogique pour le module DAC (si disponible).
+=======
+salut sale fou
