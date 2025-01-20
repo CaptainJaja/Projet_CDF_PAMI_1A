@@ -30,3 +30,10 @@ Timers :
 *TIM1_CH3=	31 ; PA10
 *TIM1_CH4=	32 ; PA11
 *TIM1_ETR=	33 ; PA12	
+
+ST_Link :
+	   Pin num ; Pin name
+*JTMS/SWDIO	34 ; PA13(JTMS/SWDIO)
+*JTCK/SWCLK	37 ; PA14 (JTCK/ SWCL K)
+
+
