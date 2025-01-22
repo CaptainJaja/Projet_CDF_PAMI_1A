@@ -49,7 +49,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "IR_Module_4way_0_1"
+		(symbol "IR_Module_4way_1_1"
 			(rectangle
 				(start -7.62 3.81)
 				(end 7.62 -3.81)
@@ -58,27 +58,8 @@
 					(type default)
 				)
 				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "IR_Module_4way_1_1"
-			(pin bidirectional line
-				(at -6.35 -6.35 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+					(type color)
+					(color 255 232 128 1)
 				)
 			)
 			(pin bidirectional line
@@ -91,7 +72,7 @@
 						)
 					)
 				)
-				(number ""
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -109,7 +90,7 @@
 						)
 					)
 				)
-				(number ""
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -127,7 +108,7 @@
 						)
 					)
 				)
-				(number ""
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -145,7 +126,7 @@
 						)
 					)
 				)
-				(number ""
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -163,7 +144,25 @@
 						)
 					)
 				)
-				(number ""
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -6.35 -6.35 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -220,7 +219,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Module_Uson_0_1"
+		(symbol "Module_Uson_1_1"
 			(rectangle
 				(start -6.35 3.81)
 				(end 6.35 -5.08)
@@ -229,11 +228,10 @@
 					(type default)
 				)
 				(fill
-					(type none)
+					(type color)
+					(color 255 243 146 1)
 				)
 			)
-		)
-		(symbol "Module_Uson_1_1"
 			(pin bidirectional line
 				(at 3.81 -7.62 90)
 				(length 2.54)
@@ -355,7 +353,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Moteur_DC_0_1"
+		(symbol "Moteur_DC_1_1"
 			(rectangle
 				(start -5.08 2.54)
 				(end 5.08 -3.81)
@@ -364,11 +362,10 @@
 					(type default)
 				)
 				(fill
-					(type none)
+					(type color)
+					(color 255 250 128 1)
 				)
 			)
-		)
-		(symbol "Moteur_DC_1_1"
 			(pin bidirectional line
 				(at -2.54 -6.35 90)
 				(length 2.54)
