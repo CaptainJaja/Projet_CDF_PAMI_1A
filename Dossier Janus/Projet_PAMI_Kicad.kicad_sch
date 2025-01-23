@@ -5052,12 +5052,6 @@
 		(uuid "60892ff8-b883-4578-85fc-5ae7f4aa865c")
 	)
 	(junction
-		(at 86.36 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "610b491e-d354-41bc-b1bb-03b102729dee")
-	)
-	(junction
 		(at 210.82 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5092,12 +5086,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84d87a3d-da26-4b75-a5c5-efaec39e581a")
-	)
-	(junction
-		(at 77.47 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85d15cc9-4cb3-4b4f-836e-5f579c604e4b")
 	)
 	(junction
 		(at 114.3 33.02)
@@ -5240,10 +5228,6 @@
 		(uuid "602b487e-7428-477e-931b-d30f8cac923f")
 	)
 	(no_connect
-		(at 219.71 104.14)
-		(uuid "774eb666-aba0-4ead-96c0-3d6dc91ff257")
-	)
-	(no_connect
 		(at 198.12 153.67)
 		(uuid "7bd6e7c0-b4a4-4f67-8d0f-ffb9dbf8e685")
 	)
@@ -5308,6 +5292,10 @@
 		(uuid "ebb9dbb9-6336-4b45-8778-3ddde01d222d")
 	)
 	(no_connect
+		(at 219.71 86.36)
+		(uuid "ed97de11-c115-4490-af3d-c93bd07d31f0")
+	)
+	(no_connect
 		(at 219.71 60.96)
 		(uuid "f3f972e5-4227-47a4-b1a6-8a76df9e065d")
 	)
@@ -5330,16 +5318,6 @@
 			(type default)
 		)
 		(uuid "05c07812-12c5-48c7-a1f4-9269f9bb8ca5")
-	)
-	(wire
-		(pts
-			(xy 69.85 33.02) (xy 77.47 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "112dfad5-cd5a-439f-b845-d305805db7fc")
 	)
 	(wire
 		(pts
@@ -5563,16 +5541,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 86.36) (xy 219.71 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39dcdbfc-7722-41d2-b4ce-66e2e4386e9e")
-	)
-	(wire
-		(pts
 			(xy 21.59 31.75) (xy 26.67 31.75)
 		)
 		(stroke
@@ -5733,16 +5701,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 33.02) (xy 86.36 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61f62544-0f40-4e55-9024-40403f882945")
-	)
-	(wire
-		(pts
 			(xy 232.41 33.02) (xy 234.95 33.02)
 		)
 		(stroke
@@ -5890,6 +5848,16 @@
 			(type default)
 		)
 		(uuid "7e857d30-516a-4716-84b7-29c430eed7e7")
+	)
+	(wire
+		(pts
+			(xy 208.28 104.14) (xy 219.71 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828dc394-05c3-4cf6-9b54-5e65ebd908de")
 	)
 	(wire
 		(pts
@@ -6283,7 +6251,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 33.02) (xy 92.71 33.02)
+			(xy 77.47 33.02) (xy 92.71 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6911,16 +6879,6 @@
 		)
 		(uuid "4cf40831-df1d-45e5-8689-bbf5e703816a")
 	)
-	(label "PWM_Servo1"
-		(at 207.01 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5294c162-5b9e-4e3f-a7f1-318b35ce5fe0")
-	)
 	(label "STBY"
 		(at 102.87 137.16 0)
 		(effects
@@ -7191,6 +7149,16 @@
 		)
 		(uuid "d74f8913-1151-4c98-a675-8a598a833ea6")
 	)
+	(label "PWM_Servo1"
+		(at 208.28 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7515518-c3fb-4b1a-a7c1-a84a2d51e969")
+	)
 	(label "IR_4"
 		(at 256.54 68.58 180)
 		(effects
@@ -7281,7 +7249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00c3268c-94f3-4c9c-a677-4658cbad16cc")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR021"
 			(at 128.27 180.34 0)
 			(effects
 				(font
@@ -7332,7 +7300,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR022")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -7347,7 +7315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "012942ef-70cd-4fd6-a063-103068238f59")
-		(property "Reference" "U2"
+		(property "Reference" "IR1"
 			(at 29.21 71.12 90)
 			(effects
 				(font
@@ -7365,7 +7333,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_S6B-XH-A-1_1x06_P2.50mm_Horizontal"
 			(at 27.94 80.01 0)
 			(effects
 				(font
@@ -7413,7 +7381,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U2")
+					(reference "IR1")
 					(unit 1)
 				)
 			)
@@ -7429,7 +7397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a69a8c8-b26e-4879-a002-5f7bd1f341fc")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR012"
 			(at 72.39 21.59 0)
 			(effects
 				(font
@@ -7480,7 +7448,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR037")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -7496,7 +7464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b194c30-3dbe-4e6e-bd0f-417b55f2449c")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR029"
 			(at 189.23 166.37 0)
 			(effects
 				(font
@@ -7547,7 +7515,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR035")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -7562,7 +7530,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0da3e92d-beb8-4c80-be2b-e320ea1c7e7b")
-		(property "Reference" "U11"
+		(property "Reference" "U2"
 			(at 245.11 44.45 0)
 			(effects
 				(font
@@ -7571,7 +7539,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STM32L552CCTx"
+		(property "Value" "MCU"
 			(at 241.3 120.65 0)
 			(effects
 				(font
@@ -7755,7 +7723,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U11")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7771,7 +7739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f81f800-0c00-477a-881c-60e9c06abc4e")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR016"
 			(at 96.52 128.27 0)
 			(effects
 				(font
@@ -7822,7 +7790,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR032")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7907,7 +7875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16dcc28e-cacb-4d42-aa3a-8b879b272486")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR019"
 			(at 115.57 179.07 0)
 			(effects
 				(font
@@ -7958,7 +7926,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR020")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8040,7 +8008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1ca7a950-8cb2-4d8d-a26e-e0936dacd05b")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 257.81 35.56 0)
 			(effects
 				(font
@@ -8094,7 +8062,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -8110,7 +8078,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23ba73dd-0c63-4768-ba9e-2d64944ad3c0")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR030"
 			(at 193.04 149.86 0)
 			(effects
 				(font
@@ -8160,7 +8128,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR036")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -8175,8 +8143,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31422bd7-ddc3-4b91-96de-e93f0781db07")
-		(property "Reference" "U6"
-			(at 30.48 124.46 90)
+		(property "Reference" "Moteur2"
+			(at 29.21 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8191,7 +8159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 35.56 125.73 0)
 			(effects
 				(font
@@ -8227,7 +8195,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U6")
+					(reference "Moteur2")
 					(unit 1)
 				)
 			)
@@ -8242,7 +8210,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "388b5e78-29af-440f-9a18-798f98ae823a")
-		(property "Reference" "C8"
+		(property "Reference" "C10"
 			(at 213.36 35.56 0)
 			(effects
 				(font
@@ -8296,7 +8264,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C8")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -8312,7 +8280,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c099a21-53b7-45b9-bc2e-34ef48debe01")
-		(property "Reference" "U3"
+		(property "Reference" "Servo2"
 			(at 27.94 149.86 90)
 			(effects
 				(font
@@ -8328,7 +8296,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
 			(at 27.94 157.48 0)
 			(effects
 				(font
@@ -8367,7 +8335,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U3")
+					(reference "Servo2")
 					(unit 1)
 				)
 			)
@@ -8450,7 +8418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ef84a98-46d2-4a17-94a1-91b326a7c2d7")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR034"
 			(at 257.81 156.21 0)
 			(effects
 				(font
@@ -8501,7 +8469,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR027")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -8516,7 +8484,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3fac9f75-32fc-4c09-a753-2a687fedb0d3")
-		(property "Reference" "C3"
+		(property "Reference" "C2"
 			(at 101.6 68.58 0)
 			(effects
 				(font
@@ -8570,7 +8538,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -8586,8 +8554,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "401c76ae-6ca7-4fb3-920a-f9295c20fb55")
-		(property "Reference" "U12"
-			(at 100.33 26.67 0)
+		(property "Reference" "Regu7v-5v1"
+			(at 100.33 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8600,6 +8568,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_RECOM_R-78B-2.0_THT"
@@ -8643,7 +8612,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U12")
+					(reference "Regu7v-5v1")
 					(unit 1)
 				)
 			)
@@ -8659,7 +8628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "446371d7-8e8c-4249-81db-11bc14d1379e")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG02"
 			(at 134.62 114.935 0)
 			(effects
 				(font
@@ -8709,7 +8678,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#FLG04")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -8724,7 +8693,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5030abfb-0256-4518-993d-f3429ee63c2c")
-		(property "Reference" "C7"
+		(property "Reference" "C9"
 			(at 204.47 35.56 0)
 			(effects
 				(font
@@ -8778,7 +8747,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C7")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -8793,7 +8762,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "51112dd1-3dac-4377-85e9-bf1e8e91a3a1")
-		(property "Reference" "C14"
+		(property "Reference" "C6"
 			(at 147.32 119.38 0)
 			(effects
 				(font
@@ -8847,7 +8816,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C14")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8937,7 +8906,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "558836a4-5872-43f9-945b-41b52d66002d")
-		(property "Reference" "C15"
+		(property "Reference" "C3"
 			(at 104.14 116.84 0)
 			(effects
 				(font
@@ -8991,24 +8960,24 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C15")
+					(reference "C3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 86.36 33.02 0)
+		(lib_id "power:+7.5V")
+		(at 69.85 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5a81f560-f709-4cfb-9007-4a419814c37d")
-		(property "Reference" "#FLG02"
-			(at 86.36 31.115 0)
+		(uuid "57d581e0-e2b2-44f2-b27e-8223d3324b80")
+		(property "Reference" "#PWR011"
+			(at 69.85 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9016,8 +8985,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 86.36 27.94 0)
+		(property "Value" "+7.5V"
+			(at 69.85 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9025,7 +8994,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 33.02 0)
+			(at 69.85 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9033,8 +9002,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 86.36 33.02 0)
+		(property "Datasheet" ""
+			(at 69.85 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9042,8 +9011,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 33.02 0)
+		(property "Description" "Power symbol creates a global label with name \"+7.5V\""
+			(at 69.85 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9052,12 +9021,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3da02533-6209-4d3a-923e-4447c06e91fd")
+			(uuid "92f7a60f-3726-4fe3-8895-d840f8bccf45")
 		)
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#FLG02")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -9073,8 +9042,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f22f53b-d552-4518-b5df-882e82ada68f")
-		(property "Reference" "J1"
-			(at 210.82 135.89 0)
+		(property "Reference" "ST-LINK1"
+			(at 210.82 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9087,6 +9056,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "FTSH-107-01-F-DV-K:SAMTEC_FTSH-107-01-F-DV-K"
@@ -9272,7 +9242,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "J1")
+					(reference "ST-LINK1")
 					(unit 1)
 				)
 			)
@@ -9288,7 +9258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6349b420-0d43-449e-ac98-97a6b0e3e3e5")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR031"
 			(at 236.22 128.27 0)
 			(effects
 				(font
@@ -9339,7 +9309,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR029")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -9423,7 +9393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6eb69061-2aac-4a19-b98f-ea4a47859e56")
-		(property "Reference" "U8"
+		(property "Reference" "U1"
 			(at 64.77 30.48 0)
 			(effects
 				(font
@@ -9440,7 +9410,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 64.77 30.48 0)
 			(effects
 				(font
@@ -9476,7 +9446,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U8")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -9492,7 +9462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "705b078b-4091-4aaa-b36c-d479b9d4a6ba")
-		(property "Reference" "U9"
+		(property "Reference" "Driver1"
 			(at 133.0041 170.18 0)
 			(effects
 				(font
@@ -9508,6 +9478,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
@@ -9612,7 +9583,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U9")
+					(reference "Driver1")
 					(unit 1)
 				)
 			)
@@ -9628,7 +9599,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76db82d2-43c7-4803-9117-d91ec39693bb")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR032"
 			(at 240.03 36.83 0)
 			(effects
 				(font
@@ -9678,7 +9649,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR030")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -9694,7 +9665,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7786c47a-1ed7-43c5-807d-9ccba33c018f")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR035"
 			(at 265.43 36.83 0)
 			(effects
 				(font
@@ -9744,7 +9715,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR034")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -9760,7 +9731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "810e0ca2-f7ab-4fe3-9b87-22b770c3efb5")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR025"
 			(at 162.56 63.5 0)
 			(effects
 				(font
@@ -9810,7 +9781,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR023")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -9825,7 +9796,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8685ea32-23ca-4536-a9a3-c40fa6b0e53a")
-		(property "Reference" "C17"
+		(property "Reference" "C1"
 			(at 86.36 116.84 0)
 			(effects
 				(font
@@ -9879,7 +9850,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C17")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -10031,7 +10002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f799ac0-e2b0-4050-91a8-4b1fc62b4d1a")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR027"
 			(at 184.15 36.83 0)
 			(effects
 				(font
@@ -10081,7 +10052,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR025")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -10096,8 +10067,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98c68570-70bc-4c6a-8f0c-27b8d97ae0b0")
-		(property "Reference" "U10"
-			(at 152.4 62.23 0)
+		(property "Reference" "Uson1"
+			(at 148.59 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10112,7 +10083,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 154.94 63.5 0)
 			(effects
 				(font
@@ -10154,7 +10125,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U10")
+					(reference "Uson1")
 					(unit 1)
 				)
 			)
@@ -10169,7 +10140,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9947c52b-dd2d-452f-8f28-97ffd8759f1a")
-		(property "Reference" "C13"
+		(property "Reference" "C5"
 			(at 137.16 119.38 0)
 			(effects
 				(font
@@ -10223,7 +10194,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C13")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -10374,7 +10345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a33ae5b3-e27b-400f-96a2-6268ec9e8abd")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR013"
 			(at 77.47 36.83 0)
 			(effects
 				(font
@@ -10424,7 +10395,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR011")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -10439,7 +10410,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a68a51fb-439c-4e91-9a6d-56a2a71a7802")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 222.25 35.56 0)
 			(effects
 				(font
@@ -10493,7 +10464,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -10509,7 +10480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a98686d6-b9ee-4f59-9115-913349ae920b")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR024"
 			(at 144.78 120.65 0)
 			(effects
 				(font
@@ -10559,7 +10530,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR021")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -10575,7 +10546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad78a26c-5f4e-4bd8-921f-405c13842b8d")
-		(property "Reference" "C12"
+		(property "Reference" "C14"
 			(at 271.78 147.3199 0)
 			(effects
 				(font
@@ -10629,7 +10600,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C12")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -10644,7 +10615,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aec3cca4-5ba7-436e-b054-01f6c0173ea0")
-		(property "Reference" "C5"
+		(property "Reference" "C7"
 			(at 186.69 35.56 0)
 			(effects
 				(font
@@ -10698,7 +10669,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C5")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -10714,8 +10685,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b4fa8642-3d56-4ac3-9483-a02d701f72b9")
-		(property "Reference" "U5"
-			(at 30.48 110.49 90)
+		(property "Reference" "Moteur1"
+			(at 29.21 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10730,7 +10701,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 35.56 110.49 0)
 			(effects
 				(font
@@ -10766,7 +10737,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U5")
+					(reference "Moteur1")
 					(unit 1)
 				)
 			)
@@ -10782,7 +10753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf00d4e3-383f-4adc-bd4b-a0da1ea51039")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR023"
 			(at 140.97 130.81 0)
 			(effects
 				(font
@@ -10833,7 +10804,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR028")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -10849,7 +10820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c04698dc-e7a1-434a-848a-320e71b2d4ed")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR026"
 			(at 162.56 73.66 0)
 			(effects
 				(font
@@ -10900,7 +10871,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR024")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -10981,7 +10952,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c49c05f1-287e-4487-af51-961834611afd")
-		(property "Reference" "S1"
+		(property "Reference" "Switch1"
 			(at 252.73 139.7 0)
 			(effects
 				(font
@@ -11181,7 +11152,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "S1")
+					(reference "Switch1")
 					(unit 1)
 				)
 			)
@@ -11197,8 +11168,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5a0fa8d-81f5-4585-a63a-e3bd0ca54451")
-		(property "Reference" "U7"
-			(at 113.03 57.15 0)
+		(property "Reference" "Regu5v-3v1"
+			(at 113.03 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11211,6 +11182,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
@@ -11289,7 +11261,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U7")
+					(reference "Regu5v-3v1")
 					(unit 1)
 				)
 			)
@@ -11304,8 +11276,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c60a36f9-7615-4377-92a7-25de17ffd632")
-		(property "Reference" "U1"
-			(at 26.67 168.91 90)
+		(property "Reference" "Servo1"
+			(at 26.67 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11320,7 +11292,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
 			(at 26.67 177.8 0)
 			(effects
 				(font
@@ -11359,7 +11331,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "U1")
+					(reference "Servo1")
 					(unit 1)
 				)
 			)
@@ -11507,7 +11479,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d536a83e-144e-4679-9734-c9147d773a33")
-		(property "Reference" "C6"
+		(property "Reference" "C8"
 			(at 195.58 35.56 0)
 			(effects
 				(font
@@ -11561,7 +11533,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C6")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -11577,7 +11549,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9e3e668-11b7-4b59-ae58-f2bad71592e2")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR022"
 			(at 132.08 67.31 0)
 			(effects
 				(font
@@ -11627,7 +11599,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR018")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -11710,7 +11682,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfaa119d-6711-4152-acc3-61d014cca269")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR033"
 			(at 250.19 46.99 0)
 			(effects
 				(font
@@ -11761,7 +11733,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR031")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -11844,7 +11816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4b60cb3-7a24-4ae9-9c32-cf7898ba753f")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR020"
 			(at 121.92 36.83 0)
 			(effects
 				(font
@@ -11894,7 +11866,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR014")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -11909,7 +11881,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e7e8f440-6995-4e16-81fd-ef7ad4ef50c8")
-		(property "Reference" "C10"
+		(property "Reference" "C12"
 			(at 248.92 35.56 0)
 			(effects
 				(font
@@ -11963,7 +11935,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "C10")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -11979,7 +11951,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea5590dd-aa4c-416f-ad95-f32b33f03157")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 184.15 46.99 0)
 			(effects
 				(font
@@ -12030,7 +12002,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12253,7 +12225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f15d959a-f4dc-4174-b465-358b3b4b0a89")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR036"
 			(at 267.97 158.75 0)
 			(effects
 				(font
@@ -12304,7 +12276,7 @@
 		(instances
 			(project "Tuto_youtube"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR033")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -12454,7 +12426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5bc2824-2931-4515-894b-eb2f87ac6b9b")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR014"
 			(at 92.71 118.11 0)
 			(effects
 				(font
@@ -12504,7 +12476,7 @@
 		(instances
 			(project ""
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR019")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -12588,7 +12560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd91233d-3d6f-4f8e-b3a1-14ec69950b8e")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR018"
 			(at 113.03 85.09 0)
 			(effects
 				(font
@@ -12639,7 +12611,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR015")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -12656,7 +12628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fef698c4-3400-4241-9da1-f7f30dfefd77")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR017"
 			(at 100.33 46.99 0)
 			(effects
 				(font
@@ -12707,7 +12679,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR012")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -12723,7 +12695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff0b2c9a-d28e-439b-b614-5fc8282725f5")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR015"
 			(at 95.25 67.31 0)
 			(effects
 				(font
@@ -12773,7 +12745,7 @@
 		(instances
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR013")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
