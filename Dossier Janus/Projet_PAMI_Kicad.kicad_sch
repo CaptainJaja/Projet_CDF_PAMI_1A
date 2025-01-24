@@ -6261,16 +6261,6 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 49.53) (xy 26.67 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd9a095f-916e-45df-984f-4d9d3d38d790")
-	)
-	(wire
-		(pts
 			(xy 184.15 33.02) (xy 193.04 33.02)
 		)
 		(stroke
@@ -6603,7 +6593,7 @@
 	)
 	(rectangle
 		(start 15.24 13.97)
-		(end 40.64 57.15)
+		(end 40.64 46.99)
 		(stroke
 			(width 0)
 			(type default)
@@ -11607,73 +11597,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.67 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc91da3c-04f1-487d-b724-c57a25a74465")
-		(property "Reference" "#PWR04"
-			(at 26.67 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 26.67 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "930732fd-939c-4d3e-9443-059df73b1712")
-		)
-		(instances
-			(project "Projet_PAMI_Kicad"
-				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 250.19 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12343,74 +12266,6 @@
 			(project "Projet_PAMI_Kicad"
 				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
 					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "MountingHole_Pad_2")
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 19.05 49.53 90)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5121524-c6f3-4be0-99e3-e4190fd83dfd")
-		(property "Reference" "H4"
-			(at 17.78 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 19.0499 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad"
-			(at 19.05 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 19.05 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 19.05 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "816bf831-dca2-4ea6-a058-cd61acef5045")
-		)
-		(instances
-			(project "Projet_PAMI_Kicad"
-				(path "/0499dc40-69b9-42f2-bab0-5a104053ae00"
-					(reference "H4")
 					(unit 1)
 				)
 			)
