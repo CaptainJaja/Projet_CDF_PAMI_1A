@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "Library_PAMI")(type "KiCad")(uri "${KIPRJMOD}/Library_PAMI.kicad_sym")(options "")(descr ""))
-)
