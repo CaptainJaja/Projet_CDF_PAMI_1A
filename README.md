@@ -28,10 +28,10 @@ Ce PCB a été conçu pour les **PAMI** (*Petits Actionneurs Mobiles Indépendan
 
 ## 🎬 Démos en GIF
 
-### 🚗 Suiveur de ligne en action
+### 🔩 PCB assemblé avec les composants soudés
 ![GIF0 - Suiveur de ligne](Ressources/GIF0.gif)
 
-### 🔩 PCB assemblé avec les composants soudés
+### 🚗 Suiveur de ligne en action
 ![GIF1 - PCB assemblé](Ressources/GIF1.gif)
 
 ---
