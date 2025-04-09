@@ -1,4 +1,4 @@
-# 🤖 Projet Coupe de France de Robotique 2025 – Design PCB 4 couches
+# 🤖 Projet Coupe de France de Robotique 2025 – Design PCB 4 couches et Code STM32
 
 Bienvenue sur le dépôt dédié à mon **design de PCB 4 couches** réalisé dans le cadre de la **Coupe de France de Robotique 2025** organisée par Planète Sciences.  
 👉 [Site officiel](https://www.coupederobotique.fr/)
