@@ -8,6 +8,8 @@
 		(title "PCB Pami coupe de France 2025")
 		(date "2025-02-04")
 		(comment 1 "Capodagli Janus")
+		(comment 2 "REDLED 151051RS04000")
+		(comment 3 "YELLOWLED 151051YS04000")
 	)
 	(lib_symbols
 		(symbol "BU33SD5WG-TR:BU33SD5WG-TR"
@@ -1817,6 +1819,130 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5151,7 +5277,7 @@
 		(uuid 724238cb-6537-43c4-99f6-b442b6fb2f3c)
 	)
 	(rectangle
-		(start 66.04 76.2)
+		(start 60.96 76.2)
 		(end 127 104.14)
 		(stroke
 			(width 0)
@@ -6591,7 +6717,7 @@
 			)
 		)
 	)
-	(global_label "GPIO3"
+	(global_label "RedLED"
 		(shape input)
 		(at 223.52 76.2 180)
 		(fields_autoplaced yes)
@@ -6604,7 +6730,7 @@
 		)
 		(uuid "2ac319fb-9bff-4628-b593-55ba7703051b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.85 76.2 0)
+			(at 213.5801 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7224,9 +7350,9 @@
 			)
 		)
 	)
-	(global_label "GPIO3"
+	(global_label "RedLED"
 		(shape input)
-		(at 82.55 93.98 180)
+		(at 74.93 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7237,7 +7363,7 @@
 		)
 		(uuid "b2a7b6ce-9fd5-4d38-b0fb-95ff39e485c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.88 93.98 0)
+			(at 64.9901 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7428,7 +7554,7 @@
 			)
 		)
 	)
-	(global_label "GPIO4"
+	(global_label "YellowLED"
 		(shape input)
 		(at 223.52 96.52 180)
 		(fields_autoplaced yes)
@@ -7441,7 +7567,7 @@
 		)
 		(uuid "d58b1ff5-2b2f-49e7-a652-adbe057c11fd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.85 96.52 0)
+			(at 211.1006 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7518,9 +7644,9 @@
 			)
 		)
 	)
-	(global_label "GPIO4"
+	(global_label "YellowLED"
 		(shape input)
-		(at 82.55 96.52 180)
+		(at 74.93 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7531,7 +7657,7 @@
 		)
 		(uuid "e698f516-6368-4998-b006-50d609c527ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.88 96.52 0)
+			(at 62.5106 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9282,6 +9408,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 78.74 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b0509ff-dede-4199-aeb3-93a88461643e")
+		(property "Reference" "R1"
+			(at 81.788 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "75"
+			(at 77.978 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 78.74 95.758 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "560112110050"
+			(at 78.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8457942e-cedf-4aa9-b190-de503270938c")
+		)
+		(pin "2"
+			(uuid "11d588a0-e048-43d7-9e2c-0d1e0b855081")
+		)
+		(instances
+			(project "Janus_finalV"
+				(path "/a7143e5e-39f3-42a3-a239-a1312258aecf"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 254 38.1 0)
 		(unit 1)
@@ -10589,6 +10782,72 @@
 			(project ""
 				(path "/a7143e5e-39f3-42a3-a239-a1312258aecf"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 205.74 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a1f4f6e-f316-4d12-9cf4-d159f995bd41")
+		(property "Reference" "#PWR028"
+			(at 205.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 205.74 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 205.74 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "605f659f-4544-43e3-a4bb-e6a369f2db31")
+		)
+		(instances
+			(project "Janus_finalV"
+				(path "/a7143e5e-39f3-42a3-a239-a1312258aecf"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12354,17 +12613,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 205.74 138.43 0)
+		(lib_id "Device:R")
+		(at 78.74 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cdbe2196-9e78-45f7-aa66-c1498e9c738c")
-		(property "Reference" "#PWR028"
-			(at 205.74 142.24 0)
+		(uuid "cb0ff962-17ea-4ab3-84d2-9bcde7e5083f")
+		(property "Reference" "R2"
+			(at 82.55 97.282 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "49.9"
+			(at 78.486 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 78.74 98.298 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12372,16 +12646,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 205.74 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 138.43 0)
+		(property "Datasheet" "560112110002"
+			(at 78.74 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12389,17 +12655,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 205.74 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 205.74 138.43 0)
+		(property "Description" "Resistor"
+			(at 78.74 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12408,12 +12665,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "99c2ed6a-0230-46fa-8eb7-42e4950ba541")
+			(uuid "58a7d263-5a8c-437e-b669-5f418845d2cd")
+		)
+		(pin "2"
+			(uuid "34933d60-57c6-4379-a314-44cfc1c450c0")
 		)
 		(instances
-			(project ""
+			(project "Janus_finalV"
 				(path "/a7143e5e-39f3-42a3-a239-a1312258aecf"
-					(reference "#PWR028")
+					(reference "R2")
 					(unit 1)
 				)
 			)

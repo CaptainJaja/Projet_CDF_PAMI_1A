@@ -53,18 +53,14 @@ UART_HandleTypeDef huart2;
 uint32_t timer_count = 0;
 uint32_t current_count = 0;
 uint16_t Distance = 0;
-uint16_t startedToTurnRight = 0;
-uint16_t startedToTurnLeft= 0;
-uint16_t findRightLine = 0;
-uint16_t findLeftLine= 0;
 uint16_t STANBY=0;
 int threshold = 2000;  //the threshold for line tracking
 
-uint16_t UperSpeed = 140;
+uint16_t UperSpeed = 150;
 uint16_t LowerSpeed = 80;
-uint16_t LeftMotorSpeed =100;
-uint16_t RightMotorSpeed =100;
-uint16_t SpeedStep = 2;
+uint16_t LeftMotorSpeed =120;
+uint16_t RightMotorSpeed =120;
+uint16_t SpeedStep = 4;
 uint16_t DebutVirageG=0;
 uint16_t DebutVirageD=0;
 uint16_t FinVirageG=0;
@@ -175,7 +171,11 @@ int main(void)
   //Stop the motor
   Stop();
 
-  int passingCross =0;
+  int crossCount =0;
+  int TIM_count0 = __HAL_TIM_GET_COUNTER(&htim1);
+  int TIM_count1 = __HAL_TIM_GET_COUNTER(&htim1);
+  int CurrentTIM_count = __HAL_TIM_GET_COUNTER(&htim1);
+  //current_count = __HAL_TIM_GET_COUNTER(&htim1);
   HAL_ADC_Start_DMA(&hadc1, ADC_VAL, 4);
 
   /* USER CODE END 2 */
@@ -184,6 +184,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	   CurrentTIM_count = __HAL_TIM_GET_COUNTER(&htim1);
 	  // Déclenche le capteur
 	  	  HAL_GPIO_WritePin(TRIG_GPIO_Port, TRIG_Pin, GPIO_PIN_SET);
 	  	  __HAL_TIM_SET_COUNTER(&htim1, 0);
@@ -191,34 +192,11 @@ int main(void)
 	  	  HAL_GPIO_WritePin(TRIG_GPIO_Port, TRIG_Pin, GPIO_PIN_RESET);
 
 
-	  	if(Distance>8){
-	  		/// V1
-//	  		if((startedToTurnLeft==0)&&(startedToTurnRight==0)){
-//				if(OL()&&OR()&&(startedToTurnLeft==0)&&(startedToTurnRight==0)){
-//					Foward(LowerSpeed);
-//					startedToTurnLeft=0;
-//					startedToTurnRight=0;
-//				}else if(OL()){
-//					TurnLeft(LowerSpeed);
-//					startedToTurnLeft=1;
-//				}else if(OR()){
-//					TurnRight(LowerSpeed);
-//					startedToTurnRight=1;
-//				}
-//	  		}else if(startedToTurnLeft==1){
-//	  			TurnLeft(LowerSpeed);
-//	  			if(IR()){
-//	  				startedToTurnRight=0;
-//	  				startedToTurnLeft=0;
-//	  			}
-//	  		}else if(startedToTurnRight==1){
-//	  			TurnRight(LowerSpeed);
-//	  			if(IL()){
-//	  				startedToTurnRight=0;
-//	  				startedToTurnLeft=0;
-//	  			}
-//	  		}
-	  		///   V2
+	  	if(Distance>8){     ///  C'est pour la distance.
+	  	if(crossCount>=6){
+	  		  				TurnRight(UperSpeed);
+	  		  			//printf("TurnRight : Crosscount :  %d \r\n", crossCount);
+	  	}else{
 	  		if((DebutVirageD==0)&&(DebutVirageG==0)){    // Si on n'est pas dans un virage
 	  		if(!OL()&&!OR()){   // Les deux extrémitées sont sur du noir
 	  			if(IL()&&!IR()){   // On regarde les deux capteur du milieu : Si celui à gauche est sur du blanc et l'autre sur du noir
@@ -234,14 +212,34 @@ int main(void)
 	  			}
 	  			// si les deux du milieu sont tous sur du noir, avancer
 	  			Run(LeftMotorSpeed, RightMotorSpeed);
+	  		}else if(OL()&&OR()&&(IL()||IR())){
+	  			if(CurrentTIM_count-TIM_count1 >=1000){
+					//printf("++ Crosscount :  %d \r\n", crossCount);
+	  				crossCount++;
+	  				TIM_count0 = __HAL_TIM_GET_COUNTER(&htim1);
+	  			}
 	  		}else if(!OL()&&OR()){  // Si le capteur le plus à droite est sur du blanc == Virage à droite !
 	  			TurnRight(LowerSpeed); // Tourner à droite (moteur gauche vitesse 30)
 	  			DebutVirageD =1;
 	  			ILdetected=0;
+//				if(CurrentTIM_count-TIM_count0 >=500){
+//					TurnRight(LowerSpeed); // Tourner à droite (moteur gauche vitesse 30)
+//					printf("TURNRIGHT Crosscount :  %d \r\n", crossCount);
+//					DebutVirageD =1;
+//					ILdetected=0;
+//					TIM_count1 = __HAL_TIM_GET_COUNTER(&htim1);
+//				}
 	  		}else if(OL()&&!OR()){  // Cas symétrique
 	  			TurnLeft(LowerSpeed);
 	  			DebutVirageG =1;
 	  			IRdetected=0;
+//				if(CurrentTIM_count-TIM_count0 >=500){
+//				TurnLeft(LowerSpeed); // Tourner à droite (moteur gauche vitesse 30)
+//				printf("TURNRIGHT Crosscount :  %d \r\n", crossCount);
+//				DebutVirageG =1;
+//				IRdetected=0;
+//				TIM_count1= __HAL_TIM_GET_COUNTER(&htim1);
+//			}
 	  		}
 	  		}else{
 	  			if((DebutVirageG==1)&&IR()&&(IRdetected==0)){  // SI on est dans un virage et le deuxième capteur à compter de la droite detecte du banc
@@ -266,12 +264,11 @@ int main(void)
 					int speed = (RightMotorSpeed>LeftMotorSpeed)?LeftMotorSpeed:RightMotorSpeed;
 					Run(speed, speed);
 	  			}
-	  		}
+	  		}}
 	  	}else{Stop();}
-	 	  printf("[ %i,    %i,    %i,    %i  ] \r\n ",ADC_VAL[0],ADC_VAL[1],ADC_VAL[2],ADC_VAL[3]);
+	 	  //printf("[ %i,    %i,    %i,    %i  ] \r\n ",ADC_VAL[0],ADC_VAL[1],ADC_VAL[2],ADC_VAL[3]);
 
-	 	  HAL_Delay(5); //If I don't add this the detection with ultrasound might cause pb with relatively long ditances
-	 	  // The sound needs time to travel, here each iteration is 20ms, might be too quick, so HAL_Delay here works just fine.
+	 	  HAL_Delay(5);
 
     /* USER CODE END WHILE */
 
